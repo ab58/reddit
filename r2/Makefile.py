@@ -38,7 +38,7 @@ print 'PLUGIN_I18N_PATHS := ' + ','.join(os.path.relpath(plugin.path)
 import sys
 for plugin in plugins:
     print 'PLUGIN_PATH_%s := %s' % (plugin.name, plugin.path)
-
+print "Fuck you reddit I'm going to fuck with your source code."
 js.load_plugin_modules(plugins)
 modules = dict((k, m) for k, m in js.module.iteritems())
 print 'JS_MODULES := ' + ' '.join(modules.iterkeys())
